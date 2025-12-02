@@ -1,0 +1,39 @@
+services:
+  mongodb:
+    image: mongo:7.0
+    environment:
+      - MONGO_INITDB_ROOT_USERNAME=admin
+      - MONGO_INITDB_ROOT_PASSWORD=password
+    volumes:
+      - mongodb_data:/data/db
+    networks:
+      - app-network
+
+  app:
+    image: kapetacom/app-runner-ts:latest
+    environment:
+      PORT: 8080
+      DIRECTORY: /src/app
+      SINGLE_APP: "true"
+      MONGO_HOST: mongodb
+      MONGO_PORT: 27017
+      MONGO_USERNAME: admin
+      MONGO_PASSWORD: password
+      MONGO_DB: myapp
+      MONGO_AUTH: admin
+      USE_MOCK: "true"
+    ports:
+      - "8080:8080"
+    volumes:
+      - ./app:/src/app
+    depends_on:
+      - mongodb
+    networks:
+      - app-network
+
+networks:
+  app-network:
+    driver: bridge
+
+volumes:
+  mongodb_data:

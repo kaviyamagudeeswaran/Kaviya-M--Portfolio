@@ -1,0 +1,637 @@
+<!DOCTYPE html><html lang="en" class="scroll-smooth"><head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Get in touch with Kaviya, a Full Stack Developer specializing in MERN stack. Contact for collaboration, projects, or inquiries."/>
+  <title>Contact - Kaviya&#39;s Portfolio</title>
+  <link rel="icon" href="/favicon.jpg" type="image/jpeg"/>
+  <link rel="manifest" href="/manifest.json"/>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin=""/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;family=JetBrains+Mono:wght@400;500;600&amp;family=Poppins:wght@400;600;700;800&amp;display=swap" rel="stylesheet"/>
+
+  <!-- TailwindCSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+            poppins: ['Poppins', 'sans-serif'],
+            mono: ['JetBrains Mono', 'monospace'],
+          },
+          colors: {
+            primary: '#6366F1',
+            secondary: '#8B5CF6',
+            accent: '#EC4899',
+            success: '#10B981',
+            warning: '#F59E0B',
+            error: '#EF4444',
+            info: '#3B82F6',
+            'light-bg': '#FFFFFF',
+            'light-secondary-bg': '#F9FAFB',
+            'dark-bg': '#0F172A',
+            'dark-secondary-bg': '#1E293B',
+            'light-primary-text': '#0F172A',
+            'light-secondary-text': '#475569',
+            'dark-primary-text': '#F8FAFC',
+            'dark-secondary-text': '#CBD5E1',
+          },
+        }
+      }
+    }
+  </script>
+
+  <!-- Quill.js CSS -->
+  <link href="https://cdn.quilljs.com/1.3.6/quill.snow.css" rel="stylesheet"/>
+
+  <!-- jQuery CDN -->
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+  <!-- Quill.js JS -->
+  <script src="https://cdn.quilljs.com/1.3.6/quill.js"></script>
+
+  <!-- ScrollReveal CDN -->
+  <script src="https://unpkg.com/scrollreveal"></script>
+
+  <!-- Typed.js CDN -->
+  <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+  <style>
+    .ql-container {
+      min-height: 200px;
+      font-family: 'Inter', sans-serif;
+    }
+    
+    .ql-editor {
+      min-height: 200px;
+    }
+    
+    .dark .ql-toolbar,
+    .dark .ql-container {
+      background-color: #1E293B;
+      border-color: #334155;
+    }
+    
+    .dark .ql-stroke {
+      stroke: #CBD5E1;
+    }
+    
+    .dark .ql-fill {
+      fill: #CBD5E1;
+    }
+    
+    .dark .ql-picker-label {
+      color: #CBD5E1;
+    }
+    
+    .dark .ql-editor.ql-blank::before {
+      color: #64748B;
+    }
+  </style>
+</head>
+<body class="bg-white dark:bg-slate-900 text-slate-900 dark:text-slate-50 transition-colors duration-300">
+
+  <!-- Header -->
+  <header class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-white/80 dark:bg-slate-900/80 backdrop-blur-md border-b border-gray-200 dark:border-slate-800" data-storm-selectable="true" data-storm-selectable-label="Header" data-storm-selectable-category="header">
+    <nav class="container mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-16 lg:h-20">
+        
+        <!-- Brand Logo -->
+        <div class="flex-shrink-0">
+          <a href="/index.html" class="text-2xl lg:text-3xl font-bold font-[&#39;Poppins&#39;] bg-gradient-to-r from-indigo-500 to-purple-600 bg-clip-text text-transparent hover:from-indigo-600 hover:to-purple-700 transition-all duration-300">
+            KaviDev
+          </a>
+        </div>
+
+        <!-- Desktop Navigation -->
+        <div class="hidden md:flex items-center space-x-1 lg:space-x-2">
+          <a href="/index.html" class="px-3 lg:px-4 py-2 text-sm lg:text-base font-medium font-[&#39;Inter&#39;] text-slate-900 dark:text-slate-50 hover:text-indigo-500 dark:hover:text-indigo-400 transition-colors duration-300 relative group">
+            Home
+            <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-indigo-500 to-purple-600 group-hover:w-full transition-all duration-300"></span>
+          </a>
+          <a href="/about.html" class="px-3 lg:px-4 py-2 text-sm lg:text-base font-medium font-[&#39;Inter&#39;] text-slate-900 dark:text-slate-50 hover:text-indigo-500 dark:hover:text-indigo-400 transition-colors duration-300 relative group">
+            About
+            <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-indigo-500 to-purple-600 group-hover:w-full transition-all duration-300"></span>
+          </a>
+          <a href="/projects.html" class="px-3 lg:px-4 py-2 text-sm lg:text-base font-medium font-[&#39;Inter&#39;] text-slate-900 dark:text-slate-50 hover:text-indigo-500 dark:hover:text-indigo-400 transition-colors duration-300 relative group">
+            Projects
+            <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-indigo-500 to-purple-600 group-hover:w-full transition-all duration-300"></span>
+          </a>
+          <a href="/skills.html" class="px-3 lg:px-4 py-2 text-sm lg:text-base font-medium font-[&#39;Inter&#39;] text-slate-900 dark:text-slate-50 hover:text-indigo-500 dark:hover:text-indigo-400 transition-colors duration-300 relative group">
+            Skills
+            <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-indigo-500 to-purple-600 group-hover:w-full transition-all duration-300"></span>
+          </a>
+          <a href="/experience.html" class="px-3 lg:px-4 py-2 text-sm lg:text-base font-medium font-[&#39;Inter&#39;] text-slate-900 dark:text-slate-50 hover:text-indigo-500 dark:hover:text-indigo-400 transition-colors duration-300 relative group">
+            Experience
+            <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-indigo-500 to-purple-600 group-hover:w-full transition-all duration-300"></span>
+          </a>
+          <a href="/contact.html" class="px-3 lg:px-4 py-2 text-sm lg:text-base font-medium font-[&#39;Inter&#39;] text-indigo-500 dark:text-indigo-400 transition-colors duration-300 relative group">
+            Contact
+            <span class="absolute bottom-0 left-0 w-full h-0.5 bg-gradient-to-r from-indigo-500 to-purple-600"></span>
+          </a>
+        </div>
+
+        <!-- Right Side Icons -->
+        <div class="hidden md:flex items-center space-x-3 lg:space-x-4">
+          <!-- Social Media Links -->
+          <a href="https://www.linkedin.com/in/kaviya--/" target="_blank" rel="noopener noreferrer" class="text-slate-600 dark:text-slate-300 hover:text-indigo-500 dark:hover:text-indigo-400 transition-all duration-300 hover:scale-110" aria-label="LinkedIn">
+            <svg class="w-5 h-5 lg:w-6 lg:h-6" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"></path>
+            </svg>
+          </a>
+          <a href="https://github.com/kaviyamagudeeswaran" target="_blank" rel="noopener noreferrer" class="text-slate-600 dark:text-slate-300 hover:text-indigo-500 dark:hover:text-indigo-400 transition-all duration-300 hover:scale-110" aria-label="GitHub">
+            <svg class="w-5 h-5 lg:w-6 lg:h-6" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"></path>
+            </svg>
+          </a>
+          <a href="mailto:kaviyamagudeeswaran3006@gmail.com" class="text-slate-600 dark:text-slate-300 hover:text-indigo-500 dark:hover:text-indigo-400 transition-all duration-300 hover:scale-110" aria-label="Email">
+            <svg class="w-5 h-5 lg:w-6 lg:h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+            </svg>
+          </a>
+
+          <!-- Theme Toggle Button -->
+          <button id="theme-toggle" class="p-2 rounded-lg text-slate-600 dark:text-slate-300 hover:bg-gray-100 dark:hover:bg-slate-800 transition-all duration-300 hover:scale-110" aria-label="Toggle theme">
+            <svg id="theme-toggle-light-icon" class="w-5 h-5 lg:w-6 lg:h-6 hidden dark:block" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+              <path d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z"></path>
+            </svg>
+            <svg id="theme-toggle-dark-icon" class="w-5 h-5 lg:w-6 lg:h-6 block dark:hidden" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+              <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path>
+            </svg>
+          </button>
+        </div>
+
+        <!-- Mobile Menu Button -->
+        <button id="mobile-menu-button" class="md:hidden p-2 rounded-lg text-slate-600 dark:text-slate-300 hover:bg-gray-100 dark:hover:bg-slate-800 transition-all duration-300" aria-label="Toggle menu">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+          </svg>
+        </button>
+      </div>
+
+      <!-- Mobile Menu -->
+      <div id="mobile-menu" class="hidden md:hidden pb-4 pt-2">
+        <div class="flex flex-col space-y-2">
+          <a href="/index.html" class="px-4 py-2 text-base font-medium font-[&#39;Inter&#39;] text-slate-900 dark:text-slate-50 hover:bg-gray-100 dark:hover:bg-slate-800 rounded-lg transition-colors duration-300">
+            Home
+          </a>
+          <a href="/about.html" class="px-4 py-2 text-base font-medium font-[&#39;Inter&#39;] text-slate-900 dark:text-slate-50 hover:bg-gray-100 dark:hover:bg-slate-800 rounded-lg transition-colors duration-300">
+            About
+          </a>
+          <a href="/projects.html" class="px-4 py-2 text-base font-medium font-[&#39;Inter&#39;] text-slate-900 dark:text-slate-50 hover:bg-gray-100 dark:hover:bg-slate-800 rounded-lg transition-colors duration-300">
+            Projects
+          </a>
+          <a href="/skills.html" class="px-4 py-2 text-base font-medium font-[&#39;Inter&#39;] text-slate-900 dark:text-slate-50 hover:bg-gray-100 dark:hover:bg-slate-800 rounded-lg transition-colors duration-300">
+            Skills
+          </a>
+          <a href="/experience.html" class="px-4 py-2 text-base font-medium font-[&#39;Inter&#39;] text-slate-900 dark:text-slate-50 hover:bg-gray-100 dark:hover:bg-slate-800 rounded-lg transition-colors duration-300">
+            Experience
+          </a>
+          <a href="/contact.html" class="px-4 py-2 text-base font-medium font-[&#39;Inter&#39;] text-indigo-500 dark:text-indigo-400 bg-gray-100 dark:bg-slate-800 rounded-lg transition-colors duration-300">
+            Contact
+          </a>
+          
+          <!-- Mobile Social Links -->
+          <div class="flex items-center justify-center space-x-6 pt-4 border-t border-gray-200 dark:border-slate-800">
+            <a href="https://www.linkedin.com/in/kaviya--/" target="_blank" rel="noopener noreferrer" class="text-slate-600 dark:text-slate-300 hover:text-indigo-500 dark:hover:text-indigo-400 transition-colors duration-300" aria-label="LinkedIn">
+              <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"></path>
+              </svg>
+            </a>
+            <a href="https://github.com/kaviyamagudeeswaran" target="_blank" rel="noopener noreferrer" class="text-slate-600 dark:text-slate-300 hover:text-indigo-500 dark:hover:text-indigo-400 transition-colors duration-300" aria-label="GitHub">
+              <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"></path>
+              </svg>
+            </a>
+            <a href="mailto:kaviyamagudeeswaran3006@gmail.com" class="text-slate-600 dark:text-slate-300 hover:text-indigo-500 dark:hover:text-indigo-400 transition-colors duration-300" aria-label="Email">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+              </svg>
+            </a>
+            <button id="mobile-theme-toggle" class="p-2 rounded-lg text-slate-600 dark:text-slate-300 hover:bg-gray-100 dark:hover:bg-slate-800 transition-all duration-300" aria-label="Toggle theme">
+              <svg class="w-6 h-6 hidden dark:block" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                <path d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z"></path>
+              </svg>
+              <svg class="w-6 h-6 block dark:hidden" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main class="pt-24 lg:pt-28 min-h-screen">
+    <!-- Hero Section -->
+    <section class="py-12 lg:py-20 bg-gradient-to-br from-indigo-50 via-purple-50 to-pink-50 dark:from-slate-900 dark:via-slate-800 dark:to-slate-900 transition-colors duration-300" data-storm-selectable="true" data-storm-selectable-label="Hero Section" data-storm-selectable-category="section">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center">
+          <h1 class="text-4xl lg:text-5xl xl:text-6xl font-bold font-[&#39;Poppins&#39;] text-slate-900 dark:text-slate-50 mb-4" data-storm-selectable="true" data-storm-selectable-label="Page Title" data-storm-selectable-category="text">
+            Get In Touch
+          </h1>
+          <p class="text-lg lg:text-xl font-[&#39;Inter&#39;] text-slate-600 dark:text-slate-300 max-w-3xl mx-auto" data-storm-selectable="true" data-storm-selectable-label="Hero Description" data-storm-selectable-category="text">
+            Have a project in mind or want to collaborate? I&#39;d love to hear from you. Let&#39;s create something amazing together!
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Content Section -->
+    <section class="py-12 lg:py-20 bg-white dark:bg-slate-900 transition-colors duration-300" data-storm-selectable="true" data-storm-selectable-label="Contact Content Section" data-storm-selectable-category="section">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16">
+          
+          <!-- Contact Information -->
+          <div class="space-y-8" data-storm-selectable="true" data-storm-selectable-label="Contact Information" data-storm-selectable-category="section">
+            <div>
+              <h2 class="text-3xl lg:text-4xl font-bold font-[&#39;Poppins&#39;] text-slate-900 dark:text-slate-50 mb-6" data-storm-selectable="true" data-storm-selectable-label="Contact Info Title" data-storm-selectable-category="text">
+                Contact Information
+              </h2>
+              <p class="text-base lg:text-lg font-[&#39;Inter&#39;] text-slate-600 dark:text-slate-300 mb-8" data-storm-selectable="true" data-storm-selectable-label="Contact Info Description" data-storm-selectable-category="text">
+                Feel free to reach out through any of the following channels. I&#39;m always open to discussing new projects, creative ideas, or opportunities to be part of your vision.
+              </p>
+            </div>
+
+            <!-- Contact Details -->
+            <div class="space-y-6">
+              <!-- Location -->
+              <div class="flex items-start space-x-4 p-4 rounded-lg bg-slate-50 dark:bg-slate-800 transition-all duration-300 hover:shadow-md" data-storm-selectable="true" data-storm-selectable-label="Location Card" data-storm-selectable-category="section">
+                <div class="flex-shrink-0 w-12 h-12 flex items-center justify-center rounded-full bg-indigo-100 dark:bg-indigo-900 text-indigo-600 dark:text-indigo-400">
+                  <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                  </svg>
+                </div>
+                <div>
+                  <h3 class="text-lg font-semibold font-[&#39;Poppins&#39;] text-slate-900 dark:text-slate-50 mb-1" data-storm-selectable="true" data-storm-selectable-label="Location Label" data-storm-selectable-category="text">Location</h3>
+                  <p class="text-base font-[&#39;Inter&#39;] text-slate-600 dark:text-slate-300" data-storm-selectable="true" data-storm-selectable-label="Location Text" data-storm-selectable-category="text">Coimbatore, Tamil Nadu, India</p>
+                </div>
+              </div>
+
+              <!-- Phone -->
+              <div class="flex items-start space-x-4 p-4 rounded-lg bg-slate-50 dark:bg-slate-800 transition-all duration-300 hover:shadow-md" data-storm-selectable="true" data-storm-selectable-label="Phone Card" data-storm-selectable-category="section">
+                <div class="flex-shrink-0 w-12 h-12 flex items-center justify-center rounded-full bg-purple-100 dark:bg-purple-900 text-purple-600 dark:text-purple-400">
+                  <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
+                  </svg>
+                </div>
+                <div>
+                  <h3 class="text-lg font-semibold font-[&#39;Poppins&#39;] text-slate-900 dark:text-slate-50 mb-1" data-storm-selectable="true" data-storm-selectable-label="Phone Label" data-storm-selectable-category="text">Phone</h3>
+                  <a href="tel:+916379858267" class="text-base font-[&#39;Inter&#39;] text-slate-600 dark:text-slate-300 hover:text-indigo-500 dark:hover:text-indigo-400 transition-colors duration-200" data-storm-selectable="true" data-storm-selectable-label="Phone Number" data-storm-selectable-category="text">+91 6379858267</a>
+                </div>
+              </div>
+
+              <!-- Email -->
+              <div class="flex items-start space-x-4 p-4 rounded-lg bg-slate-50 dark:bg-slate-800 transition-all duration-300 hover:shadow-md" data-storm-selectable="true" data-storm-selectable-label="Email Card" data-storm-selectable-category="section">
+                <div class="flex-shrink-0 w-12 h-12 flex items-center justify-center rounded-full bg-pink-100 dark:bg-pink-900 text-pink-600 dark:text-pink-400">
+                  <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                  </svg>
+                </div>
+                <div>
+                  <h3 class="text-lg font-semibold font-[&#39;Poppins&#39;] text-slate-900 dark:text-slate-50 mb-1" data-storm-selectable="true" data-storm-selectable-label="Email Label" data-storm-selectable-category="text">Email</h3>
+                  <a href="mailto:kaviyamagudeeswaran3006@gmail.com" class="text-base font-[&#39;Inter&#39;] text-slate-600 dark:text-slate-300 hover:text-indigo-500 dark:hover:text-indigo-400 transition-colors duration-200 break-all" data-storm-selectable="true" data-storm-selectable-label="Email Address" data-storm-selectable-category="text">kaviyamagudeeswaran3006@gmail.com</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Social Links -->
+            <div class="pt-8" data-storm-selectable="true" data-storm-selectable-label="Social Links Section" data-storm-selectable-category="section">
+              <h3 class="text-xl font-semibold font-[&#39;Poppins&#39;] text-slate-900 dark:text-slate-50 mb-4" data-storm-selectable="true" data-storm-selectable-label="Follow Me Title" data-storm-selectable-category="text">Follow Me</h3>
+              <div class="flex flex-wrap gap-4">
+                <a href="https://github.com/kaviyamagudeeswaran" target="_blank" rel="noopener noreferrer" class="flex items-center space-x-2 px-4 py-2 rounded-lg bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 hover:bg-indigo-500 hover:text-white dark:hover:bg-indigo-500 transition-all duration-300 transform hover:scale-105" data-storm-selectable="true" data-storm-selectable-label="GitHub Link" data-storm-selectable-category="button">
+                  <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"></path>
+                  </svg>
+                  <span class="font-[&#39;Inter&#39;] font-medium">GitHub</span>
+                </a>
+                <a href="https://www.linkedin.com/in/kaviya--/" target="_blank" rel="noopener noreferrer" class="flex items-center space-x-2 px-4 py-2 rounded-lg bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 hover:bg-indigo-500 hover:text-white dark:hover:bg-indigo-500 transition-all duration-300 transform hover:scale-105" data-storm-selectable="true" data-storm-selectable-label="LinkedIn Link" data-storm-selectable-category="button">
+                  <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"></path>
+                  </svg>
+                  <span class="font-[&#39;Inter&#39;] font-medium">LinkedIn</span>
+                </a>
+                <a href="mailto:kaviyamagudeeswaran3006@gmail.com" class="flex items-center space-x-2 px-4 py-2 rounded-lg bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 hover:bg-indigo-500 hover:text-white dark:hover:bg-indigo-500 transition-all duration-300 transform hover:scale-105" data-storm-selectable="true" data-storm-selectable-label="Email Link" data-storm-selectable-category="button">
+                  <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                  </svg>
+                  <span class="font-[&#39;Inter&#39;] font-medium">Email</span>
+                </a>
+                <a href="https://www.instagram.com/?hl=en" target="_blank" rel="noopener noreferrer" class="flex items-center space-x-2 px-4 py-2 rounded-lg bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 hover:bg-indigo-500 hover:text-white dark:hover:bg-indigo-500 transition-all duration-300 transform hover:scale-105" data-storm-selectable="true" data-storm-selectable-label="Instagram Link" data-storm-selectable-category="button">
+                  <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z" clip-rule="evenodd"></path>
+                  </svg>
+                  <span class="font-[&#39;Inter&#39;] font-medium">Instagram</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Contact Form -->
+          <div class="bg-slate-50 dark:bg-slate-800 rounded-2xl p-8 lg:p-10 shadow-lg transition-all duration-300" data-storm-selectable="true" data-storm-selectable-label="Contact Form" data-storm-selectable-category="form">
+            <h2 class="text-3xl lg:text-4xl font-bold font-[&#39;Poppins&#39;] text-slate-900 dark:text-slate-50 mb-6" data-storm-selectable="true" data-storm-selectable-label="Form Title" data-storm-selectable-category="text">
+              Send a Message
+            </h2>
+            
+            <form id="contact-form" class="space-y-6">
+              <!-- Name Field -->
+              <div>
+                <label for="name" class="block text-sm font-semibold font-[&#39;Inter&#39;] text-slate-700 dark:text-slate-300 mb-2">
+                  Name <span class="text-red-500">*</span>
+                </label>
+                <input type="text" id="name" name="name" required="" class="w-full px-4 py-3 rounded-lg border border-slate-300 dark:border-slate-600 bg-white dark:bg-slate-700 text-slate-900 dark:text-slate-50 font-[&#39;Inter&#39;] focus:outline-none focus:ring-2 focus:ring-indigo-500 dark:focus:ring-indigo-400 transition-all duration-200" placeholder="Your full name"/>
+              </div>
+
+              <!-- Email Field -->
+              <div>
+                <label for="email" class="block text-sm font-semibold font-[&#39;Inter&#39;] text-slate-700 dark:text-slate-300 mb-2">
+                  Email <span class="text-red-500">*</span>
+                </label>
+                <input type="email" id="email" name="email" required="" class="w-full px-4 py-3 rounded-lg border border-slate-300 dark:border-slate-600 bg-white dark:bg-slate-700 text-slate-900 dark:text-slate-50 font-[&#39;Inter&#39;] focus:outline-none focus:ring-2 focus:ring-indigo-500 dark:focus:ring-indigo-400 transition-all duration-200" placeholder="your.email@example.com"/>
+              </div>
+
+              <!-- Subject Field -->
+              <div>
+                <label for="subject" class="block text-sm font-semibold font-[&#39;Inter&#39;] text-slate-700 dark:text-slate-300 mb-2">
+                  Subject <span class="text-red-500">*</span>
+                </label>
+                <input type="text" id="subject" name="subject" required="" class="w-full px-4 py-3 rounded-lg border border-slate-300 dark:border-slate-600 bg-white dark:bg-slate-700 text-slate-900 dark:text-slate-50 font-[&#39;Inter&#39;] focus:outline-none focus:ring-2 focus:ring-indigo-500 dark:focus:ring-indigo-400 transition-all duration-200" placeholder="What&#39;s this about?"/>
+              </div>
+
+              <!-- Message Field with Quill Editor -->
+              <div>
+                <label for="message" class="block text-sm font-semibold font-[&#39;Inter&#39;] text-slate-700 dark:text-slate-300 mb-2">
+                  Message <span class="text-red-500">*</span>
+                </label>
+                <div id="quill-editor" class="bg-white dark:bg-slate-700 rounded-lg border border-slate-300 dark:border-slate-600"></div>
+                <input type="hidden" id="message" name="message"/>
+              </div>
+
+              <!-- Submit Button -->
+              <button type="submit" class="w-full px-6 py-4 bg-gradient-to-r from-indigo-500 to-purple-600 hover:from-indigo-600 hover:to-purple-700 text-white font-semibold font-[&#39;Inter&#39;] rounded-lg shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 dark:focus:ring-offset-slate-800" data-storm-selectable="true" data-storm-selectable-label="Submit Button" data-storm-selectable-category="button">
+                Send Message
+              </button>
+            </form>
+
+            <!-- Success Message -->
+            <div id="success-message" class="hidden mt-6 p-4 bg-green-100 dark:bg-green-900 border border-green-400 dark:border-green-600 text-green-700 dark:text-green-200 rounded-lg">
+              <div class="flex items-center">
+                <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                </svg>
+                <span class="font-[&#39;Inter&#39;] font-medium">Thank you! Your message has been sent successfully.</span>
+              </div>
+            </div>
+
+            <!-- Error Message -->
+            <div id="error-message" class="hidden mt-6 p-4 bg-red-100 dark:bg-red-900 border border-red-400 dark:border-red-600 text-red-700 dark:text-red-200 rounded-lg">
+              <div class="flex items-center">
+                <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z" clip-rule="evenodd"></path>
+                </svg>
+                <span class="font-[&#39;Inter&#39;] font-medium" id="error-message-text">Something went wrong. Please try again later.</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-white dark:bg-slate-900 border-t border-slate-200 dark:border-slate-800 transition-colors duration-300" data-storm-selectable="true" data-storm-selectable-label="Footer" data-storm-selectable-category="footer">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+      <!-- Footer Content Container -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+        
+        <!-- Brand Section -->
+        <div class="text-center md:text-left">
+          <h3 class="text-xl font-bold font-[&#39;Poppins&#39;] text-slate-900 dark:text-slate-50 mb-2">KaviDev</h3>
+          <p class="text-sm font-[&#39;Inter&#39;] text-slate-600 dark:text-slate-300">Full Stack Developer</p>
+        </div>
+
+        <!-- Quick Links Section -->
+        <div class="text-center">
+          <h4 class="text-sm font-semibold font-[&#39;Poppins&#39;] text-slate-900 dark:text-slate-50 mb-4 uppercase tracking-wider">Quick Links</h4>
+          <nav class="flex flex-wrap justify-center gap-4">
+            <a href="/index.html" class="text-sm font-[&#39;Inter&#39;] text-slate-600 dark:text-slate-300 hover:text-indigo-500 dark:hover:text-indigo-400 transition-colors duration-200">Home</a>
+            <a href="/about.html" class="text-sm font-[&#39;Inter&#39;] text-slate-600 dark:text-slate-300 hover:text-indigo-500 dark:hover:text-indigo-400 transition-colors duration-200">About</a>
+            <a href="/projects.html" class="text-sm font-[&#39;Inter&#39;] text-slate-600 dark:text-slate-300 hover:text-indigo-500 dark:hover:text-indigo-400 transition-colors duration-200">Projects</a>
+            <a href="/skills.html" class="text-sm font-[&#39;Inter&#39;] text-slate-600 dark:text-slate-300 hover:text-indigo-500 dark:hover:text-indigo-400 transition-colors duration-200">Skills</a>
+            <a href="/experience.html" class="text-sm font-[&#39;Inter&#39;] text-slate-600 dark:text-slate-300 hover:text-indigo-500 dark:hover:text-indigo-400 transition-colors duration-200">Experience</a>
+            <a href="/contact.html" class="text-sm font-[&#39;Inter&#39;] text-slate-600 dark:text-slate-300 hover:text-indigo-500 dark:hover:text-indigo-400 transition-colors duration-200">Contact</a>
+          </nav>
+        </div>
+
+        <!-- Social Links Section -->
+        <div class="text-center md:text-right">
+          <h4 class="text-sm font-semibold font-[&#39;Poppins&#39;] text-slate-900 dark:text-slate-50 mb-4 uppercase tracking-wider">Follow Me</h4>
+          <div class="flex justify-center md:justify-end gap-4">
+            <a href="https://github.com/kaviyamagudeeswaran" target="_blank" rel="noopener noreferrer" class="w-10 h-10 flex items-center justify-center rounded-full bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 hover:bg-indigo-500 hover:text-white dark:hover:bg-indigo-500 transition-all duration-300 transform hover:scale-110" aria-label="GitHub">
+              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                <path fill-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" clip-rule="evenodd"></path>
+              </svg>
+            </a>
+            <a href="https://www.linkedin.com/in/kaviya--/" target="_blank" rel="noopener noreferrer" class="w-10 h-10 flex items-center justify-center rounded-full bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 hover:bg-indigo-500 hover:text-white dark:hover:bg-indigo-500 transition-all duration-300 transform hover:scale-110" aria-label="LinkedIn">
+              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"></path>
+              </svg>
+            </a>
+            <a href="mailto:kaviyamagudeeswaran3006@gmail.com" class="w-10 h-10 flex items-center justify-center rounded-full bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 hover:bg-indigo-500 hover:text-white dark:hover:bg-indigo-500 transition-all duration-300 transform hover:scale-110" aria-label="Email">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+              </svg>
+            </a>
+            <a href="https://www.instagram.com/?hl=en" target="_blank" rel="noopener noreferrer" class="w-10 h-10 flex items-center justify-center rounded-full bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 hover:bg-indigo-500 hover:text-white dark:hover:bg-indigo-500 transition-all duration-300 transform hover:scale-110" aria-label="Instagram">
+              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                <path fill-rule="evenodd" d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z" clip-rule="evenodd"></path>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Divider -->
+      <div class="border-t border-slate-200 dark:border-slate-800 pt-8">
+        <div class="flex flex-col md:flex-row justify-between items-center gap-4">
+          <!-- Copyright -->
+          <p class="text-sm font-[&#39;Inter&#39;] text-slate-600 dark:text-slate-300 text-center md:text-left">
+            Copyright © 2025 kaviya. All rights reserved.
+          </p>
+          
+          <!-- Built with love message -->
+          <p class="text-sm font-[&#39;Inter&#39;] text-slate-600 dark:text-slate-300 text-center md:text-right flex items-center gap-2">
+            Designed and built with 
+            <span class="text-pink-500 animate-pulse inline-block">❤️</span>
+          </p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script type="module">
+    import ClientAPI from '/client.js';
+    const client = new ClientAPI();
+
+    $(document).ready(function() {
+      // Theme Toggle Functionality
+      function initTheme() {
+        const savedTheme = localStorage.getItem('theme') || 'light';
+        if (savedTheme === 'dark') {
+          $('html').addClass('dark');
+        } else {
+          $('html').removeClass('dark');
+        }
+      }
+
+      function toggleTheme() {
+        $('html').toggleClass('dark');
+        const currentTheme = $('html').hasClass('dark') ? 'dark' : 'light';
+        localStorage.setItem('theme', currentTheme);
+      }
+
+      initTheme();
+
+      $('#theme-toggle, #mobile-theme-toggle').on('click', function() {
+        toggleTheme();
+      });
+
+      // Mobile Menu Toggle
+      $('#mobile-menu-button').on('click', function() {
+        $('#mobile-menu').toggleClass('hidden');
+      });
+
+      // Initialize Quill Editor
+      const quill = new Quill('#quill-editor', {
+        theme: 'snow',
+        placeholder: 'Write your message here...',
+        modules: {
+          toolbar: [
+            ['bold', 'italic', 'underline', 'strike'],
+            ['blockquote', 'code-block'],
+            [{ 'list': 'ordered'}, { 'list': 'bullet' }],
+            [{ 'header': [1, 2, 3, 4, 5, 6, false] }],
+            ['link'],
+            ['clean']
+          ]
+        }
+      });
+
+      // Form Submission
+      $('#contact-form').on('submit', async function(e) {
+        e.preventDefault();
+
+        // Hide previous messages
+        $('#success-message').addClass('hidden');
+        $('#error-message').addClass('hidden');
+
+        // Get form values
+        const name = $('#name').val().trim();
+        const email = $('#email').val().trim();
+        const subject = $('#subject').val().trim();
+        const messageHTML = quill.root.innerHTML;
+        const messageText = quill.getText().trim();
+
+        // Validation
+        if (!name || !email || !subject || !messageText) {
+          $('#error-message-text').text('Please fill in all required fields.');
+          $('#error-message').removeClass('hidden');
+          return;
+        }
+
+        // Email validation
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        if (!emailRegex.test(email)) {
+          $('#error-message-text').text('Please enter a valid email address.');
+          $('#error-message').removeClass('hidden');
+          return;
+        }
+
+        try {
+          // Submit to API
+          await client.createContactFormSubmission({
+            name: name,
+            email: email,
+            subject: subject,
+            message: messageHTML
+          });
+
+          // Show success message
+          $('#success-message').removeClass('hidden');
+
+          // Reset form
+          $('#contact-form')[0].reset();
+          quill.setContents([]);
+
+          // Scroll to success message
+          $('html, body').animate({
+            scrollTop: $('#success-message').offset().top - 100
+          }, 500);
+
+        } catch (error) {
+          console.error('Error submitting form:', error);
+          $('#error-message-text').text(error.message || 'Something went wrong. Please try again later.');
+          $('#error-message').removeClass('hidden');
+
+          // Scroll to error message
+          $('html, body').animate({
+            scrollTop: $('#error-message').offset().top - 100
+          }, 500);
+        }
+      });
+
+      // ScrollReveal Animations
+      ScrollReveal().reveal('.bg-gradient-to-br', {
+        duration: 1000,
+        origin: 'top',
+        distance: '50px',
+        opacity: 0,
+        easing: 'ease-in-out'
+      });
+
+      ScrollReveal().reveal('[data-storm-selectable-label="Contact Information"]', {
+        duration: 1000,
+        origin: 'left',
+        distance: '50px',
+        opacity: 0,
+        delay: 200,
+        easing: 'ease-in-out'
+      });
+
+      ScrollReveal().reveal('[data-storm-selectable-label="Contact Form"]', {
+        duration: 1000,
+        origin: 'right',
+        distance: '50px',
+        opacity: 0,
+        delay: 200,
+        easing: 'ease-in-out'
+      });
+
+      ScrollReveal().reveal('[data-storm-selectable-label="Location Card"], [data-storm-selectable-label="Phone Card"], [data-storm-selectable-label="Email Card"]', {
+        duration: 800,
+        origin: 'bottom',
+        distance: '30px',
+        opacity: 0,
+        interval: 150,
+        easing: 'ease-in-out'
+      });
+
+      ScrollReveal().reveal('[data-storm-selectable-label="Social Links Section"]', {
+        duration: 1000,
+        origin: 'bottom',
+        distance: '30px',
+        opacity: 0,
+        delay: 400,
+        easing: 'ease-in-out'
+      });
+    });
+  </script>
+
+
+</body></html>
