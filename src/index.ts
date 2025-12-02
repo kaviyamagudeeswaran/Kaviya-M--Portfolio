@@ -2,7 +2,7 @@ import express, { Request, Response, NextFunction } from "express";
 import dotenv from "dotenv";
 import logger from "./utils/logger";
 import process from "process";
-import populate_with_mock_data from "./mockdata";
+// import populate_with_mock_data from "./mockdata";
 import path from "path";
 import fs from "fs";
 import { login } from "./routes/login";
@@ -29,22 +29,22 @@ const PORT = process.env.PORT || 5010;
 logger.info("Starting app server...");
 
 // Mock data setup
-const mockDataInitialized = (async () => {
-  if (process.env.USE_MOCK === "true") {
-    console.log("Initializing mock data...");
-    try {
-      await populate_with_mock_data();
-      logger.info("Mock data initialization complete");
-    } catch (mockError) {
-      logger.error("Mock data initialization failed:", mockError);
-    }
-  }
-})();
+// const mockDataInitialized = (async () => {
+//   if (process.env.USE_MOCK === "true") {
+//     console.log("Initializing mock data...");
+//     try {
+//       await populate_with_mock_data();
+//       logger.info("Mock data initialization complete");
+//     } catch (mockError) {
+//       logger.error("Mock data initialization failed:", mockError);
+//     }
+//   }
+// })();
 
-app.use(async function initializeMockData(req, res, next) {
-  await mockDataInitialized;
-  next();
-});
+// app.use(async function initializeMockData(req, res, next) {
+//   await mockDataInitialized;
+//   next();
+// });
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
