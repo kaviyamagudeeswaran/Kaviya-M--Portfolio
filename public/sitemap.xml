@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>${host}/index.html</loc>
+    <lastmod>2025-11-18</lastmod>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>${host}/about.html</loc>
+    <lastmod>2025-11-18</lastmod>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>${host}/projects.html</loc>
+    <lastmod>2025-11-18</lastmod>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>${host}/skills.html</loc>
+    <lastmod>2025-11-18</lastmod>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>${host}/experience.html</loc>
+    <lastmod>2025-11-18</lastmod>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>${host}/contact.html</loc>
+    <lastmod>2025-11-18</lastmod>
+    <priority>1.0</priority>
+  </url>
+</urlset>
